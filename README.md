@@ -16,7 +16,7 @@ A self-hosted, local-first AI operations dashboard, packaged and shipped as a re
 - **92,000+ lines** across 150 commits: 53k Python, 20k JavaScript, plus the front end
 - A single service layer exposing **120+ HTTP endpoints**, backed by a persistent agent with a large tool surface
 - **Specialist subagents**, persistent cross-session memory with full-text search, and cron-scheduled autonomous jobs
-- **The agent ships features to itself.** A scheduled job implements a dashboard improvement on its own branch, runs the checks, and opens a pull request. It never self-merges. 38 opened, 7 merged after human review, [31 queued at the gate](https://github.com/huntermixhunter/D.A.T.A/pulls?q=is%3Apr+label%3Aauto-feature)
+- **The agent ships features to itself.** A scheduled job implements a dashboard improvement on its own branch, runs the checks, and opens a pull request. It never self-merges. 38 opened, 7 merged after human review, [31 queued at the gate by design](https://github.com/huntermixhunter/D.A.T.A/blob/main/AUTONOMOUS_BUILD_LOOP.md)
 - Browser control over the Chrome DevTools Protocol, desktop control, and MCP server integration
 - Cross-platform release pipeline: Windows installer and macOS DMGs built on hosted runners, with private configuration structurally excluded from the distributable
 - Runs entirely on the user's machine. No account required, no telemetry
