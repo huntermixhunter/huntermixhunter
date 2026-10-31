@@ -11,7 +11,7 @@ Open to remote AI and automation engineering work.
 ## Things I have shipped
 
 ### [D.A.T.A](https://github.com/huntermixhunter/D.A.T.A) &nbsp;·&nbsp; `Python` `JavaScript`
-A self-hosted, local-first AI operations dashboard, packaged and sold as a paid desktop product.
+A self-hosted, local-first AI operations dashboard, packaged and shipped as a real desktop product people download and install. Free and open source under Apache 2.0, with a name-your-price checkout.
 
 - **92,000+ lines** across 150 commits: 53k Python, 20k JavaScript, plus the front end
 - A single service layer exposing **120+ HTTP endpoints**, backed by a persistent agent with a large tool surface
