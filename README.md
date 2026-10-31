@@ -21,6 +21,23 @@ A self-hosted, local-first AI operations dashboard, packaged and shipped as a re
 - Cross-platform release pipeline: Windows installer and macOS DMGs built on hosted runners, with private configuration structurally excluded from the distributable
 - Runs entirely on the user's machine. No account required, no telemetry
 
+### [autocut](https://github.com/huntermixhunter/autocut) &nbsp;·&nbsp; `Python` `FFmpeg`
+A local-first pipeline that turns long-form video into captioned vertical clips, with no paid API anywhere in the loop. It transcribes audio locally, scores sentence-aligned windows, picks passages that stand on their own, and renders them as 1080x1920 MP4s with synchronized word captions.
+
+- Runs entirely on local hardware: `faster-whisper` for transcription, FFmpeg for rendering. No API keys, no accounts, no per-minute billing
+- Every stage writes a durable artifact, so any stage can be re-run, inspected or hand-edited without repeating the one before it
+- Selection is rule-based and transparent on purpose. The headline is not allowed to borrow a stronger claim from later in the clip, and it returns fewer clips rather than weaker ones
+- 20 tests and 10 subtests covering render output, caption timing, source boundaries and packaging
+
+### [magimatix.com](https://github.com/huntermixhunter/magimatix-site) &nbsp;·&nbsp; `TypeScript` `Next.js` `Stripe`
+The production site and digital storefront for my studio. Not a brochure template: a marketing site and a working one-time-purchase storefront in the same application, with payment, delivery and transactional email wired end to end.
+
+- Live: **[magimatix.com](https://magimatix.com)**
+- Next.js 16 App Router, React 19, TypeScript and Tailwind 4 on Vercel, across 100 commits
+- Stripe embedded checkout, with a webhook that verifies the Stripe signature before trusting any payload, then records the sale and triggers fulfilment
+- Release assets sit behind a stable redirect, so download links emailed months ago still resolve when a new version ships
+- Markdown blog with generated hero images, dynamic Open Graph images, and sitemap and robots generated at build time
+
 ### [Curve Lab](https://github.com/huntermixhunter/curvelab) &nbsp;·&nbsp; `TypeScript` `Next.js`
 Simulate and compare Meteora Dynamic Bonding Curves before launching on one, with verified mainnet replays.
 
