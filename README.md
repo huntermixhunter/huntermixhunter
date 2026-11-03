@@ -13,12 +13,12 @@ Open to remote AI and automation engineering work.
 ### [D.A.T.A](https://github.com/huntermixhunter/D.A.T.A) &nbsp;·&nbsp; `Python` `JavaScript`
 A self-hosted, local-first AI operations dashboard, packaged and shipped as a real desktop product people download and install. Free and open source under Apache 2.0, with a name-your-price checkout.
 
-- **92,000+ lines** across 150 commits: 53k Python, 20k JavaScript, plus the front end
-- A single service layer exposing **120+ HTTP endpoints**, backed by a persistent agent with a large tool surface
-- **Specialist subagents**, persistent cross-session memory with full-text search, and cron-scheduled autonomous jobs
+- **About 50,000 lines** of first-party Python and JavaScript across **150+ commits**, with **280+ Python tests**
+- A single service layer exposing **120+ HTTP endpoints**, backed by a persistent agent with **40+ tools**
+- **10 specialist subagents**, persistent cross-session memory with **hybrid search** (SQLite FTS5 plus local embeddings, merged with reciprocal rank fusion), and cron-scheduled autonomous jobs
 - **The agent ships features to itself.** A scheduled job implements a dashboard improvement on its own branch, runs the checks, and opens a pull request. It never self-merges. 38 opened, 7 merged after human review, [31 queued at the gate by design](https://github.com/huntermixhunter/D.A.T.A/blob/main/AUTONOMOUS_BUILD_LOOP.md)
 - Browser control over the Chrome DevTools Protocol, desktop control, and MCP server integration
-- Cross-platform release pipeline: Windows installer and macOS DMGs built on hosted runners, with private configuration structurally excluded from the distributable
+- Release pipeline: Windows installer built locally, Intel and Apple Silicon macOS DMGs built on GitHub-hosted runners, SHA-256 checksums published, and private configuration structurally excluded from the distributable
 - Runs entirely on the user's machine. No account required, no telemetry
 
 ### [autocut](https://github.com/huntermixhunter/autocut) &nbsp;·&nbsp; `Python` `FFmpeg`
@@ -56,11 +56,11 @@ Production sites I built and maintain, including [dusk2dawnlighting.com](https:/
 
 **AI and agents** &nbsp; Multi-agent orchestration · tool and function calling · MCP servers · retrieval and persistent memory · prompt engineering · Claude, OpenAI and Gemini APIs · local models via Ollama
 
-**Automation** &nbsp; n8n · cron and scheduled jobs · OAuth integrations · REST API design · browser automation (Chrome DevTools Protocol, Playwright)
+**Automation** &nbsp; cron and scheduled jobs · OAuth integrations · REST API design · browser automation (Chrome DevTools Protocol, Playwright)
 
-**Infrastructure** &nbsp; Linux VPS (DigitalOcean) · Vercel · Next.js · Docker · Git and GitHub Actions · Cloudflare · SQLite · Postgres
+**Infrastructure** &nbsp; Linux VPS (DigitalOcean) · Vercel · Next.js · Git and GitHub Actions · Cloudflare · SQLite
 
-**Tools I build with** &nbsp; Claude Code · Codex · Cursor
+**Tools I build with** &nbsp; Claude Code · Codex
 
 ---
 
