@@ -1,22 +1,24 @@
 # Hunter Mix
 
-**AI systems and automation engineer.** I build agent infrastructure that runs unattended, then I ship it and keep it running.
+**AI systems and automation builder.** I direct AI coding agents to design, test, and ship real software, then I keep it running.
 
 Based in Sandpoint, Idaho. Remote. Founder of [Magimatix](https://magimatix.com), where I build custom AI tooling, workflow automation, and production websites for small businesses.
 
-Open to remote AI and automation engineering work.
+Open to remote AI and automation work.
+
+**How I build:** I do not write the code myself. I write the requirements, direct AI coding agents (Claude Code and Codex), review and test what comes back, and ship it. Everything below was built that way, and the code is public so you can judge it.
 
 ---
 
 ## Things I have shipped
 
 ### [D.A.T.A](https://github.com/huntermixhunter/D.A.T.A) &nbsp;·&nbsp; `Python` `JavaScript`
-A self-hosted, local-first AI operations dashboard, packaged and shipped as a real desktop product people download and install. Free and open source under Apache 2.0, with a name-your-price checkout.
+A self-hosted, local-first AI operations dashboard, packaged and shipped as a real desktop product people download and install. Free and open source under Apache 2.0, with an optional name-your-price tip.
 
-- **About 50,000 lines** of first-party Python and JavaScript across **150+ commits**, with **280+ Python tests**
+- **About 50,000 lines** of first-party Python and JavaScript, written by AI coding agents under my direction, across **150+ commits**, with **280+ Python tests**
 - A single service layer exposing **120+ HTTP endpoints**, backed by a persistent agent with **40+ tools**
-- **10 specialist subagents**, persistent cross-session memory with **hybrid search** (SQLite FTS5 plus local embeddings, merged with reciprocal rank fusion), and cron-scheduled autonomous jobs
-- **The agent ships features to itself.** A scheduled job implements a dashboard improvement on its own branch, runs the checks, and opens a pull request. It never self-merges. 38 opened, 7 merged after human review, [31 queued at the gate by design](https://github.com/huntermixhunter/D.A.T.A/blob/main/AUTONOMOUS_BUILD_LOOP.md)
+- **10 specialist subagents**, persistent cross-session memory with **hybrid search** (SQLite FTS5 plus local embeddings, merged with reciprocal rank fusion), and scheduled jobs
+- **A human gate on the agent's own work.** A scheduled job implements a dashboard improvement on its own branch, runs the checks, and opens a pull request. It never merges its own work, and a person reads every diff. 38 opened, 7 merged after human review, [31 queued at the gate by design](https://github.com/huntermixhunter/D.A.T.A/blob/main/AUTONOMOUS_BUILD_LOOP.md)
 - Browser control over the Chrome DevTools Protocol, desktop control, and MCP server integration
 - Release pipeline: Windows installer built locally, Intel and Apple Silicon macOS DMGs built on GitHub-hosted runners, SHA-256 checksums published, and private configuration structurally excluded from the distributable
 - Runs entirely on the user's machine. No account required, no telemetry
@@ -38,29 +40,24 @@ The production site and digital storefront for my studio. Not a brochure templat
 - Release assets sit behind a stable redirect, so download links emailed months ago still resolve when a new version ships
 - Markdown blog with generated hero images, dynamic Open Graph images, and sitemap and robots generated at build time
 
-### [Curve Lab](https://github.com/huntermixhunter/curvelab) &nbsp;·&nbsp; `TypeScript` `Next.js`
-Simulate and compare Meteora Dynamic Bonding Curves before launching on one, with verified mainnet replays.
-
-- Live: **[curvelab-lake.vercel.app](https://curvelab-lake.vercel.app)**
-- Next.js and TypeScript, deployed on Vercel, with a Vitest suite covering simulation, mainnet replay, integrity and preset-catalog logic
-- Replays a curve against a demand flow and surfaces the tradeoff operators currently cannot see: graduation point, fees earned, and demand that arrives after graduation and never touches the curve
-
 ### Client work
 Production sites I built and maintain, including [dusk2dawnlighting.com](https://dusk2dawnlighting.com) and [truesumbookkeeping.com](https://truesumbookkeeping.com).
 
 ---
 
-## Stack
+## What the projects are built with
 
-**Languages** &nbsp; Python · JavaScript · TypeScript · SQL · Bash · PowerShell · HTML/CSS
+The code is written by AI coding agents under my direction. I am listing the stack so you know what you are reading, not as a claim that I type it.
 
-**AI and agents** &nbsp; Multi-agent orchestration · tool and function calling · MCP servers · retrieval and persistent memory · prompt engineering · Claude, OpenAI and Gemini APIs · local models via Ollama
+**Languages in the repos** &nbsp; Python · JavaScript · TypeScript · SQL · Bash · PowerShell · HTML/CSS
 
-**Automation** &nbsp; cron and scheduled jobs · OAuth integrations · REST API design · browser automation (Chrome DevTools Protocol, Playwright)
+**AI and agents** &nbsp; Multi-agent orchestration · tool and function calling · MCP servers · retrieval and persistent memory · Claude, OpenAI and Gemini APIs · local models via Ollama
+
+**Automation** &nbsp; scheduled jobs · OAuth integrations · REST APIs · browser automation (Chrome DevTools Protocol, Playwright)
 
 **Infrastructure** &nbsp; Linux VPS (DigitalOcean) · Vercel · Next.js · Git and GitHub Actions · Cloudflare · SQLite
 
-**Tools I build with** &nbsp; Claude Code · Codex
+**Tools I direct** &nbsp; Claude Code · Codex
 
 ---
 
