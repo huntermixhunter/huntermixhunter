@@ -13,12 +13,12 @@ Open to remote AI and automation work.
 ## Things I have shipped
 
 ### [D.A.T.A](https://github.com/huntermixhunter/D.A.T.A) &nbsp;·&nbsp; `Python` `JavaScript`
-A self-hosted, local-first AI operations dashboard, packaged and shipped as a real desktop product people download and install. Free and open source under Apache 2.0, with an optional name-your-price tip.
+A self-hosted, local-first AI operations dashboard, packaged and shipped as a desktop product that anyone can download and install. Free and open source under Apache 2.0, with an optional name-your-price tip.
 
 - **About 50,000 lines** of first-party Python and JavaScript, written by AI coding agents under my direction, across **150+ commits**, with **280+ Python tests**
 - A single service layer exposing **120+ HTTP endpoints**, backed by a persistent agent with **40+ tools**
 - **10 specialist subagents**, persistent cross-session memory with **hybrid search** (SQLite FTS5 plus local embeddings, merged with reciprocal rank fusion), and scheduled jobs
-- **A human gate on the agent's own work.** A scheduled job implements a dashboard improvement on its own branch, runs the checks, and opens a pull request. It never merges its own work, and a person reads every diff. 38 opened, 7 merged after human review, [31 queued at the gate by design](https://github.com/huntermixhunter/D.A.T.A/blob/main/AUTONOMOUS_BUILD_LOOP.md)
+- **A human gate on the agent's own work.** A scheduled job implements a dashboard improvement on a separate branch, runs the checks, and opens a pull request. It never merges its own work, so nothing it writes ships without human approval. 38 opened, 7 merged after human review, [31 waiting for review](https://github.com/huntermixhunter/D.A.T.A/blob/main/AUTONOMOUS_BUILD_LOOP.md)
 - Browser control over the Chrome DevTools Protocol, desktop control, and MCP server integration
 - Release pipeline: Windows installer built locally, Intel and Apple Silicon macOS DMGs built on GitHub-hosted runners, SHA-256 checksums published, and private configuration structurally excluded from the distributable
 - Runs entirely on the user's machine. No account required, no telemetry
